@@ -1,0 +1,673 @@
+@import "bourbon"
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1400px)
+  .content
+    width: 100%
+
+  .cart_product
+    .catalog_center_content
+      .cart_content_wrap
+        align-items: center
+        flex-direction: column
+        .product_description
+          width: 100%
+          margin-top: 20px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1200px)
+  .block_search
+    width: 75%
+  .content
+    .main
+      .container
+        .line_goods
+          .item
+            margin-bottom: 10px
+
+  .container
+    width: 100%
+    padding: 0 15px
+
+  .reviews .container
+    width: 100%
+
+  footer
+    .footer_top
+      .container
+        width: 100%
+        padding: 25px 15px
+        flex-wrap: wrap
+    .footer_bottom
+      .container
+        width: 90%
+        p
+          text-align: center
+
+  .catalog_content_banner
+    padding: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+
+  .contacts, .create_order, .my_booking, .page_credit, .personal_area
+    .container
+      width: calc(100% - 250px)
+
+  .block_product_credit_terms
+    .block_img
+      min-width: 224px
+      //max-width: 551px
+
+  .instruction
+    .container
+      width: 100%
+      .instruction_content
+        width: 100%
+        justify-content: space-around
+        .item
+          &:nth-child(2)
+            margin: 0
+
+  .goods
+    .container
+      padding: 40px 15px 30px
+      .line_goods
+        .item
+          margin-bottom: 10px
+
+  #account-settings-popup .content .passport-data
+    margin-bottom: 20px
+
+@media only screen and (max-width : 1100px)
+  .my_booking
+    .container
+      .my_booking_content
+        .item
+          flex-direction: column
+          .block_product_credit_terms
+            width: 100%
+            height: auto
+          .online_credit
+            width: 100%
+            height: auto
+            min-height: auto
+            text-align: center
+            .heading_title, .monthly_payment
+              max-width: 100%
+              margin: 0 auto 20px
+            .monthly_payment
+              justify-content: center
+
+  .catalog_content_wrap
+    justify-content: space-around
+
+  .passport-data
+    flex-direction: column
+    align-items: flex-start
+    .form-group
+      width: 100%
+
+  .credit-steps-form .input-box
+    flex-direction: column
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 950px)
+  header
+    .header_bottom
+      padding: 0 15px
+      .transfer
+        margin-right: 17px
+        .fa
+          margin-right: 10px
+      .block_left
+        .menu
+          margin-left: 50px
+          font-size: 14px
+          li
+            a
+              font-size: 12px
+
+  h1
+    font-size: 20px
+    line-height: normal
+
+  .block_search
+    width: 60%
+    label
+      input
+        font-size: 12px
+    button
+      font-size: 12px
+
+  .cart_product, .catalog
+    flex-wrap: wrap
+    .sidebar_menu
+      width: 100%
+      padding: 25px 0 0 0
+      ul
+        li
+          margin-bottom: 10px
+          .sidebar_menu_drop
+            margin: 10px 0
+            li
+              a
+                padding: 7px 20px 7px 40px
+    .catalog_center_content
+      width: calc(100% - 230px)
+      margin: 20px 0 0 0
+      padding: 0 10px
+      box-sizing: border-box
+      .rezult
+        margin-top: 12px
+
+  .contacts, .create_order, .my_booking, .page_credit, .personal_area
+    .container
+      .contacts_content
+        flex-direction: column
+        align-items: center
+        padding-bottom: 0
+        .contacts_content_banner
+          margin-top: 20px
+
+  .block_product_credit_terms
+    flex-direction: column
+    align-items: center
+    .block_img
+      display: flex
+      justify-content: center
+      align-items: flex-start
+      margin: 0 0 10px 0
+
+  .my_booking
+    .container
+      .my_booking_content
+        .item
+          .block_product_credit_terms
+            flex-direction: column
+            align-items: center
+            .block_img
+              display: flex
+              align-items: center
+              justify-content: center
+              margin: 0 auto 20px
+              min-width: auto
+
+  .page_credit
+    .container
+      .loan_payments
+        justify-content: space-between
+        margin-bottom: 40px
+        .bl_item
+          margin-bottom: 20px
+          p
+            margin-bottom: 10px
+
+  .personal_area
+    .container
+      .personal_area_content
+        flex-direction: column
+        padding-bottom: 0
+        .contacts_content_banner
+          margin-top: 20px
+          width: 100%
+          height: auto
+          -webkit-background-size: cover
+          background-size: cover
+
+@media only screen and (max-width : 930px)
+  .main-line
+    justify-content: center
+
+  .block_search
+    width: 100%
+    margin: 0 0 20px 0
+
+  .credit-steps-form.wizard
+    >.steps
+      >ul
+        >li:not(:first-child)
+          margin-left: 30px
+          &:after
+            width: 30px
+
+  .credit-steps-form .two-columns
+    flex-direction: column
+    align-items: center
+    .column
+      width: 100%
+      max-width: none
+
+@media only screen and (max-width : 860px)
+  .text_page-slider
+    .owl-item
+      width: 100%
+      height: auto
+    .carousel_item
+      &:before
+        display: none
+      img
+        width: 100%
+        height: auto
+
+  .dashboard
+    .container
+      width: 100%
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 810px)
+  .container
+    width: calc(100% - 200px)
+
+  .dashboard
+    .container
+      flex-direction: column
+      align-items: center
+      .left-side
+        margin-bottom: 20px
+
+  .contacts, .create_order, .my_booking, .page_credit, .personal_area
+    .container
+      width: calc(100% - 100px)
+
+  header .header_bottom
+    padding: 10px 15px
+
+  header
+    .header_bottom
+      height: auto
+      min-height: 67px
+      flex-direction: column
+      justify-content: center
+      .block_left
+        margin-bottom: 10px
+
+  footer
+    .footer_top
+      .container
+        justify-content: space-around
+        .footer_menu
+          margin-bottom: 10px
+
+  .content .main
+    margin: -90px 0 0 0
+
+@media only screen and (max-width : 768px)
+  .container
+    width: 100%
+    padding: 0 15px
+    box-sizing: border-box
+    z-index: 2
+
+  .brands .container
+    padding: 50px 15px 20px
+
+  .payments
+    .container
+      padding: 64px 15px
+    &:before, &:after
+      -webkit-background-size: contain
+      background-size: contain
+      background-position: center bottom
+      width: 150px
+    .container
+      .it
+        width: 100%
+
+  .reviews
+    .container
+      .reviews_carousel
+        .carousel_item
+          width: 98%
+          .block_text
+            padding: 50px 40px 20px 40px
+            p
+              max-height: 83px
+
+  .issues
+    .container
+      padding: 50px 15px
+      .issues_content
+        width: 100%
+        .panel_heading
+          width: 99%
+
+  .catalog
+    flex-direction: column
+    align-items: center
+    .catalog_center_content
+      width: 100%
+
+  .banner_sidebar
+    padding: 0 15px
+    box-sizing: border-box
+    width: 100%
+    align-items: center
+    flex-direction: row
+    justify-content: space-between
+    flex-wrap: wrap
+
+  #banner_sidebar-mobile
+    display: flex
+    margin: 20px 0 0 0
+    width: 100%
+    padding-top: 0
+
+  .banner_sidebar-mobile
+    display: none
+
+  #account-settings-popup
+    .content
+      flex-direction: column
+      > div
+        width: 100%
+        max-width: none
+
+
+@media screen and (max-width: 640px)
+  .advantages
+    .container
+      .advantages_content
+        flex-direction: column
+        align-items: center
+
+  .cart_product
+    flex-direction: column
+    align-items: center
+    .catalog_center_content
+      width: 100%
+
+  .banner_sidebar
+    display: none
+
+
+  .contacts_callback
+    .container
+      form
+        label
+          width: 100%
+
+  .product_detail, .product_options
+    font-size: 12px
+
+  .block_product_credit_terms
+    padding: 22px 10px
+    .block_img
+      min-width: auto
+      width: 100%
+    .block_text
+      width: 100%
+      .bl_bottom
+        flex-direction: column
+        align-items: flex-start
+        .score, .price
+          margin: 5px 0 0 0
+
+  .instruction
+    .container
+      padding: 60px 0
+      .instruction_content
+        .item
+          margin-bottom: 20px
+
+  .white-popup
+    .modal-body
+      padding: 20px 15px
+
+  .white-popup .wizard>.actions
+    padding: 0 15px 20px
+
+  .white-popup .wizard .modal-body
+    padding: 20px 15px 0
+
+  .credit-steps-form.wizard>.actions ul li a, .credit-steps-form.wizard>.actions ul li a:active, .credit-steps-form.wizard>.actions ul li a:hover
+    padding: 10px 50px
+
+@media screen and (max-width: 580px)
+  .personal_area-header
+    flex-direction: column
+
+  .tabs__caption
+    margin: 10px 0 0
+    li
+      padding: 0
+
+  .credit
+    li
+      a
+        margin: 0 0 10px 0
+        display: block
+
+@media screen and (max-width: 526px)
+  .catalog_content_wrap
+    flex-direction: column
+    align-items: center
+
+  .contacts:before, .create_order:before, .my_booking:before, .page_credit:before, .personal_area:before
+    left: -15%
+
+  .contacts:after, .create_order:after, .my_booking:after, .page_credit:after, .personal_area:after
+    right: -20%
+
+  .contacts_callback .container form
+    width: 90%
+
+  .contacts, .create_order, .my_booking, .page_credit, .personal_area
+    .container
+      .my_booking_content
+        .tabs__caption
+          flex-direction: column
+          align-items: center
+          height: auto
+          width: 100%
+          li
+            height: 50px
+            width: 100%
+
+  .links_form label input
+    padding-left: 15px
+    font-size: 12px
+
+  .btn
+    width: auto
+    padding: 10px 30px
+
+  .modal-credit .result-item
+    flex-wrap: wrap
+    .status
+      max-width: none
+      border: none
+        top: 2px solid #28a262
+      width: 100%
+      margin: 10px 0 0 0
+
+  .white-popup .action-button
+    flex-direction: column
+    align-items: center
+    a
+      margin: 10px 0 0 0
+
+@media screen and (max-width: 480px)
+  .list-like
+    column-count: 1
+  #contact-us
+    h1
+      font-size: 26px
+    .second_phone-container
+      .phone
+        font-size: 16px
+
+  header
+    .header_bottom
+      .block_left
+        flex-direction: column
+        align-items: center
+        .menu
+          margin: 10px 0 0 0
+
+  .content
+    .main
+      .container
+        .line_goods
+          flex-direction: column
+          align-items: center
+          margin-bottom: 30px
+
+
+
+  .pagination
+    margin-bottom: 30px
+
+  #banner_sidebar-mobile
+    flex-direction: column
+    align-items: center
+
+  .contacts, .create_order, .my_booking, .page_credit, .personal_area
+    .container
+      h2
+        margin-bottom: 30px
+      .contacts_content
+        .contacts_content_left
+          .c_line
+            .c_line_title
+              min-width: 100px
+              width: 100px
+        .contacts_content_banner
+          width: 290px
+          p
+            font-size: 20px
+            line-height: normal
+
+
+  .credit_terms_links
+    word-break: break-all
+
+  .instruction
+    .container
+      .instruction_content
+        flex-direction: column
+        align-items: center
+
+
+  .goods .container .line_goods
+    flex-direction: column
+    align-items: center
+
+  .create_order
+    .container
+      width: calc(100% - 20px)
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 430px)
+  header
+    .header_bottom
+      padding: 10px 0
+      .block_left
+        flex-direction: column
+        .menu
+          margin: 5px 0 0 0
+
+  .block_search
+    label
+      input
+        padding-left: 10px
+        font-size: 10px
+
+  .amout1, .amout2
+    font-size: 20px
+
+  .payments
+    .container
+      h2
+        text-align: center
+      .pay
+       margin-top: 20px
+
+  footer
+    .footer_top
+      .container
+        flex-direction: column
+        .footer_menu
+          margin-top: 10px
+        .footer_issues
+          margin-bottom: 10px
+
+  .cart_product
+    .catalog_center_content
+      .cart_content_wrap
+        .product_image
+          width: 100%
+          .img_max
+            width: 180px
+
+  .in_detail, .product_reviews h4
+    margin-bottom: 20px
+
+  .personal_area
+    .container
+      .personal_area_content
+        .personal_area_left
+          .c_line
+            flex-direction: column
+            margin-bottom: 15px
+            .c_line_title
+              width: auto
+              margin-bottom: 10px
+
+  .wizard>.actions>ul
+    display: flex
+    flex-direction: column
+    align-items: center
+    li
+      margin: 0 0 10px 0
+
+  .credit
+    justify-content: space-around
+
+  .credit-steps-form.wizard
+    >.steps
+      >ul
+        >li:not(:first-child)
+          margin-left: 20px
+          &:after
+            width: 20px
+
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 380px)
+  header
+    .header_top
+      flex-wrap: wrap
+      span
+        margin: 0 3px
+      .buy
+        margin-left: 5px
+    .header_bottom
+      .block_right
+        flex-direction: column
+        .transfer
+          margin: 0 0 5px 0
+
+  .reviews
+    .container
+      .reviews_carousel
+        .carousel_item
+          .block_text
+            padding: 50px 30px 20px 30px
+            h4
+              margin-bottom: 15px
+
+  .issues .container .issues_content .panel_heading .block_title
+    padding-right: 30px
+
+
+  .select
+    margin: 0 10px 10px 0
+
